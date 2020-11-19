@@ -46,7 +46,7 @@ public class SpaceBoxing {
             local_weight = Math.round((weight * 1.23)*100.0)/100.0;
         }
         else
-            System.out.println("Error: invalid planet.5");
+            System.out.println("Error: invalid planet.");
 
         System.out.println("Your weight would be " + local_weight + " on that planet.");
     }
