@@ -12,7 +12,7 @@ public class WorstNumberGuessingGameEver {
 
         System.out.println("TEH WORST NUBMER GESSING GAME EVAR!!!!!!!1!\n" +
                 "\n" +
-                "I\"M THKING OF A NBR FROM 1-10.  TRY 2 GESS! 3\n");
+                "I\"M THKING OF A NBR FROM 1-10.  TRY 2 GESS!\n");
         guess = keyboard.nextInt();
 
         if (guess == rightanswer) {
