@@ -17,7 +17,10 @@ public class TwentyQuestions {
         System.out.println("Question 2) Is it bigger than a breadbox? (please answer yes/no)");
         answer2 = keyboard.next();
 
+//boolean isYes = answer2.equals("yes");
+
         if (answer1.equals("animal")) {
+//            if (!isYes) {
             if(answer2.equals("no")) {
             System.out.println("You're thinking of a squirrel!\n" +
                     "I would ask you if I'm right, but I don't actually care.");
