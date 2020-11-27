@@ -36,7 +36,7 @@ public class ShortAdventure2 {
         }
 
         System.out.println( "\nEND." );
-        
+
 
 
         String answer1, answer2, answer3;
