@@ -16,33 +16,41 @@ public class Day1Part2 {
                 1988, 1350, 1638, 1800, 1999, 1822, 1776, 1896, 1610, 1831, 1921, 1535, 1526, 1491, 1876, 1476, 1945, 1702, 1900,
                 1814, 1289, 1992, 1859, 1967, 1966, 1283, 2002, 1195, 1066, 1924, 1968, 1835, 1971, 1977, 1430, 1844, 1465,
                 1595, 1957, 1472, 219, 1851, 1955};
-        int sum = 0;
+        int sum1 = 0;
+        int sum2 = 0;
         int multi = 0;
 
         // print array length
 
-        System.out.println(myNum.length);
+//        System.out.println(myNum.length);
 
         // sort the array
 
-        Arrays.sort(myNum);
+//        Arrays.sort(myNum);
 
-        System.out.printf("Modified arr[] : %s",
-                Arrays.toString(myNum));
+//        System.out.printf("Modified arr[] : %s",
+//                Arrays.toString(myNum));
 
         // loop through an array with a for loop
 
         for (int i = 0; i < myNum.length; i++) {
-            for (int n = 1; n < (myNum.length-n); n++) {
-                int a = myNum[i];
-                int b = myNum[i+n];
-                for (int p = 1; p < (myNum.length-p); p++) {
-                    int c = myNum[i+p];
-                    sum = a + b + c;
-                if (sum == 2020) {
-                    System.out.println(a + " and " + b + " and " + c + " together add up to " + sum);
+            int a = myNum[i];
+            for (int n = 1; n < (myNum.length-1); n++) {
+                int b = myNum[n];
+                sum1 = a + b;
+                if (sum1 == 2020) {
+                    System.out.println(a + " and " + b + " and " + " together add up to " + sum1);
+                    multi = a * b;
+                    System.out.println("Multiply the answers and you get " + (multi));
+                }
+                for (int p = 2; p < (myNum.length-2); p++) {
+                    int c = myNum[p];
+                    sum2 = a + b + c;
+                if (sum2 == 2020) {
+                    System.out.println("\n" + a + " and " + b + " and " + c + " together add up to " + sum2);
                     multi = a * b * c;
                     System.out.println("Multiply the answers and you get " + (multi));
+                    return;
                 }}
             }
 
